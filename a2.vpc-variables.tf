@@ -13,7 +13,7 @@ variable "vnet_address_space" {
 
 variable "web_subnet_name" {
     type = string
-    default = "websubnet"
+    default = "web-subnet"
   
 }
 
@@ -25,7 +25,7 @@ variable "web_subnet_address" {
 
 variable "db_subnet_name" {
     type = string
-    default = "dbsubnet"
+    default = "db-subnet"
   
 }
 

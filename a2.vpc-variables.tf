@@ -17,7 +17,7 @@ variable "web_subnet_name" {
   
 }
 
-variable "web_address_space" {
+variable "web_subnet_address" {
     type = list(string)
     default = [ "10.0.1.0/24" ]
   
@@ -29,7 +29,7 @@ variable "db_subnet_name" {
   
 }
 
-variable "db_address_space" {
+variable "db_subnet_address" {
     type = list(string)
     default = [ "10.0.2.0/24" ]
   

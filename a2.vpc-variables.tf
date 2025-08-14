@@ -1,7 +1,7 @@
 variable "vnet_name" {
   description = "Virtual network name"
   type = string
-  default = "vnet default"
+  default = "vnet1"
 }
 
 variable "vnet_address_space" {

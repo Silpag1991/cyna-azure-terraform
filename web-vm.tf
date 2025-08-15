@@ -5,7 +5,8 @@ resource "azurerm_linux_virtual_machine" "linuxvm" {
   resource_group_name = azurerm_resource_group.rg.name
   size                = "Standard_F2"
   admin_username      = "adminuser"
-  admin_password = "Admin@123456"
+  admin_password      =  "Admin@123456"
+   disable_password_authentication = false
   network_interface_ids = [
     azurerm_network_interface.web_linux_nic[each.key].id,
   ]

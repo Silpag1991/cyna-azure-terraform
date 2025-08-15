@@ -1,11 +1,12 @@
+#to define local varaibles
 locals {
-  owner = var.business_desicion
+  owners = var.business_desicion
   environment = var.environment
-  resource_name_prefix = "${var.business_desicion}-${var.environment}"
-
-
-    common_tags = {
-    owners = local.owner
+  resoure_name_prefix="${var.business_desicion}-${var.environment}"
+  #resource name prefix is the varaible against that i am concatination two values
+  #sap-hr
+  common_tags = {
+    owners = local.owners
     environment = local.environment
   }
 }

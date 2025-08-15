@@ -5,7 +5,7 @@ default = "cyn-rg"
 
 variable "resource_group_location"{
     type = string
-    default = "eastus2"
+    default = "eastus"
 }
 
 variable "business_desicion"{

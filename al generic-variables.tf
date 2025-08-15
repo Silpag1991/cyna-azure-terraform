@@ -8,7 +8,7 @@ variable "resource_group_location" {
   default = "eastus2"
 }
 
-variable "business_dision" {
+variable "business_desicion" {
   type = string
   default = "sap"
 }

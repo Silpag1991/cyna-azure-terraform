@@ -3,7 +3,7 @@ resource "azurerm_linux_virtual_machine" "linuxvm" {
     name                = "${local.resource_name_prefix}-nic-${each.key}"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  size                = "Standard_F2"
+  size                = "Standard_B1s"
   admin_username      = "adminuser"
   admin_password      =  "Admin@123456"
    disable_password_authentication = false
